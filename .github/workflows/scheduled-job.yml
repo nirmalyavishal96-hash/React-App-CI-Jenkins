@@ -49,7 +49,7 @@ jobs:
                 username: ${{secrets.EMAIL_USERNAME}}
                 password: ${{secrets.EMAIL_PASSWORD}}
                 subject: React App Build Successful
-                to: nirmalyavishall@gmail.com
+                to: ${{secrets.RECIEVER_EMAIL}}
                 from: ${{secrets.EMAIL_USERNAME}}
                 body: "Build job of ${{github.repository}} for Branch: ${{github.ref_name}}  completed successfully!"
                 
